@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="/signup" method="post">
+        <h2>new user? sign up!</h2>
+        <h3>name</h3>
+        <input type="text" name="first">
+        <h3>family name</h3>
+        <input type="text" name="last">
+        <button type="submit">submit</button>
+    </form>
+    <!-- {% if user.name and user.last_name  %}
+    <h3> {{user.name}}</h3>
+    <h3>{{user.last_name}} </h3>
+    {%endif%} -->
+    <h1>{{user.name}} {{user.last_name}}</h1>
+</body>
+
+</html>
